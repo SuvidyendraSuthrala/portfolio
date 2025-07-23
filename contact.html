@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Contact Hero */
+    .contact-hero {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-hero h2 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff6f91, #ff9671);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 6s ease infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      box-shadow: 0 0 10px #ff6f91;
+    }
+
+    /* Button */
+    .btn {
+      background: #ff6f91;
+      color: white;
+      padding: 14px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ff9671;
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: transparent; /* Fully transparent */
+  z-index: 1000;
+}
+
+    /* Floating shapes */
+    .floating-shapes span {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-20px); opacity: 0.6; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .contact-hero h2 { font-size: 40px; }
+      form { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h1>Suthrala Suvidyendra | Portfolio</h1>
+  <ul>
+    <li><a href="index.html">Meet me</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certifications.html">Certifications</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="contact.html" style="color:#ff6f91;">CONTACT</a></li>
+  </ul>
+</div>
+
+<!-- Contact Section -->
+<div class="contact-hero">
+  <!-- Floating Shapes -->
+  <div class="floating-shapes">
+    <span style="width:60px; height:60px; top:15%; left:10%; animation-delay:0s;"></span>
+    <span style="width:70px; height:70px; top:70%; left:75%; animation-delay:2s;"></span>
+    <span style="width:50px; height:50px; top:80%; left:40%; animation-delay:4s;"></span>
+  </div>
+
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2025 Suvidyendra | Portfolio</p>
+</footer>
+
+</body>
+</html>

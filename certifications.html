@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Certifications Hero */
+    .certifications-hero {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: white;
+      min-height: 100vh;
+      padding: 50px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: transparent; /* Fully transparent */
+  z-index: 1000;
+}
+
+    .certifications-hero h2 {
+      font-size: 60px;
+      margin-bottom: 40px;
+      background: linear-gradient(90deg, #f9d423, #ff4e50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 6s ease infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Grid Layout */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 100px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Certification Card */
+    .cert-card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cert-card:hover {
+      transform: scale(1.5);
+    }
+
+    /* Hidden Image */
+    .cert-card img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      transition: opacity 0.4s ease;
+      border-radius: 12px;
+    }
+
+    .cert-card:hover img {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .certifications-hero h2 {
+        font-size: 40px;
+      }
+      .cert-card {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h1>Suthrala Suvidyendra | Portfolio</h1>
+  <ul>
+    <li><a href="index.html">Meet me</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certifications.html" style="color:#ff6f91;">CERTIFICATIONS</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Certifications Section -->
+<div class="certifications-hero">
+<Br>
+
+<br>
+<br>
+  <h2>My Certifications</h2>
+  <div class="cert-grid">
+    <!-- Each Certification -->
+    <div class="cert-card">
+      Oracle Java Certification
+      <img src="cert1.jpg" alt="Oracle Java Certification">
+    </div>
+    <div class="cert-card">
+      MongoDB Certified Developer
+      <img src="cert2.jpg" alt="MongoDB Certified Developer">
+    </div>
+    <div class="cert-card">
+      Ethical Hacking Basics
+      <img src="cert3.jpg" alt="Ethical Hacking Basics">
+    </div>
+    <div class="cert-card">
+      Python for AI
+      <img src="cert4.jpg" alt="Python for AI">
+    </div>
+    <div class="cert-card">
+      Data Science Foundations
+      <img src="cert5.jpg" alt="Data Science Foundations">
+    </div>
+    <div class="cert-card">
+      Computer Architecture
+      <img src="cert6.jpg" alt="AWS Cloud Practitioner">
+    </div>
+    <div class="cert-card">
+      ECHOS
+      <img src="cert7.jpg" alt="SQL Database Management">
+    </div>
+    <div class="cert-card">
+      echo quiz
+      <img src="cert8.jpg" alt="React & Node.js Development">
+    </div>
+    <div class="cert-card">
+      Programming in JAVA
+      <img src="cert9.jpg" alt="Cybersecurity Essentials">
+    </div>
+    <div class="cert-card">
+      Hackathon - CBIT
+      <img src="cert10.jpg" alt="Hackathon Winner">
+    </div>
+    <div class="cert-card">
+      Techno Quiz
+      <img src="cert11.jpg" alt="Techno Quiz">
+    </div>
+    <div class="cert-card">
+      Shruthi - IDOL
+      <img src="cert12.jpg" alt="Winter Upskilling Program">
+    </div>
+	<div class="cert-card">
+      VNR Hackathon
+      <img src="cert13.jpg" alt="Winter Upskilling Program">
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Suvidyendra | Portfolio</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Research Section */
+    .research-hero {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      color: white;
+      min-height: 100vh;
+      padding: 50px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .research-hero h2 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #43cea2, #185a9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 6s ease infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: transparent; /* Fully transparent */
+  z-index: 1000;
+}
+
+
+    .research-hero p {
+      font-size: 22px;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    /* Download Button */
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #fff;
+      color: #ff5e62;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ff5e62;
+      color: #fff;
+    }
+
+    /* Floating shapes */
+    .floating-shapes span {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-20px); opacity: 0.6; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .research-hero h2 { font-size: 40px; }
+      .research-hero p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h1>Suthrala Suvidyendra | Portfolio </h1>
+  <ul>
+    <li><a href="index.html">Meet me</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certifications.html">Certifications</a></li>
+    <li><a href="research.html" style="color:#ff6f91;">RESEARCH</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Research Section -->
+<div class="research-hero">
+  <!-- Floating shapes -->
+  <div class="floating-shapes">
+    <span style="width:50px; height:50px; top:20%; left:10%; animation-delay:0s;"></span>
+    <span style="width:70px; height:70px; top:60%; left:80%; animation-delay:2s;"></span>
+    <span style="width:40px; height:40px; top:80%; left:50%; animation-delay:4s;"></span>
+  </div>
+
+  <h2>Research Paper</h2>
+  <p>
+    <strong>Title:</strong> Personalized AI-Based Sleep Analysis Using Smart Wearables:  
+    A Review of Current Trends and Future Directions
+  </p>
+  <a href="research-paper.pdf" download class="btn">Download PDF</a>
+</div>
+
+<footer>
+  <p>© 2025 Suvidyendra | Portfolio</p>
+</footer>
+
+</body>
+</html>

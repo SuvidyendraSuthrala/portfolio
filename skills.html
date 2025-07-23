@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .skills-hero {
+      background: linear-gradient(120deg, #8E2DE2, #4A00E0);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .skills-hero h2 {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .category {
+      margin: 40px 0;
+    }
+
+    .category h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #FFD700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 20px #FFD700, 0 0 40px #FF69B4;
+    }
+
+    /* Floating shapes */
+    .floating-shapes span {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-25px); opacity: 0.5; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .skills-hero h2 { font-size: 40px; }
+      .category h3 { font-size: 24px; }
+      .card { font-size: 18px; }
+    }
+.skills-hero h2 {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6f91, #ff9671, #f6d365);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+  text-transform: uppercase;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: transparent; /* Fully transparent */
+  z-index: 1000;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h1>Suthrala Suvidyendra | Portfolio</h1>
+  <ul>
+    <li><a href="index.html">Meet me</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html" style="color:#ff6f91;">SKILLS</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certifications.html">Certifications</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Skills Section -->
+<div class="skills-hero">
+  <div class="floating-shapes">
+    <span style="width:60px; height:60px; top:20%; left:10%; animation-delay:0s;"></span>
+    <span style="width:80px; height:80px; top:60%; left:75%; animation-delay:2s;"></span>
+    <span style="width:50px; height:50px; top:80%; left:50%; animation-delay:4s;"></span>
+  </div>
+<Br>
+
+<br>
+<br>
+  <h2>My Skills</h2>
+
+  <!-- Programming Languages -->
+<div class="category">
+  <h3>Programming Languages</h3>
+  <div class="grid">
+    <div class="card">C</div>
+    <div class="card">Python</div>
+    <div class="card">SQL</div>
+    <div class="card">C++</div>
+    <div class="card">R</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Java</div>
+  </div>
+</div>
+
+<!-- Web Development -->
+<div class="category">
+  <h3>Web Development</h3>
+  <div class="grid">
+    <div class="card">MERN Stack</div>
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">Firebase</div>
+  </div>
+</div>
+
+<!-- AI/ML Tools -->
+<div class="category">
+  <h3>AI / ML Tools</h3>
+  <div class="grid">
+    <div class="card">TensorFlow</div>
+    <div class="card">OpenCV</div>
+    <div class="card">Scikit-learn</div>
+    <div class="card">PyTorch</div>
+    <div class="card">NumPy</div>
+    <div class="card">Pandas</div>
+    <div class="card">OpenAI API</div>
+  </div>
+</div>
+
+<!-- Developer Tools -->
+<div class="category">
+  <h3>Developer Tools</h3>
+  <div class="grid">
+    <div class="card">Git</div>
+    <div class="card">VS Code</div>
+  </div>
+</div>
+
+<!-- Databases -->
+<div class="category">
+  <h3>Databases</h3>
+  <div class="grid">
+    <div class="card">SQL</div>
+    <div class="card">MongoDB</div>
+  </div>
+</div>
+
+<!-- Core CS Concepts -->
+<div class="category">
+  <h3>Core CS Concepts</h3>
+  <div class="grid">
+    <div class="card">Data Structures</div>
+    <div class="card">Operating Systems</div>
+    <div class="card">Compiler Design</div>
+    <div class="card">Computer Architecture</div>
+  </div>
+</div>
+
+<!-- Operating Systems -->
+<div class="category">
+  <h3>Operating Systems</h3>
+  <div class="grid">
+    <div class="card">Linux</div>
+    <div class="card">Windows</div>
+  </div>
+</div>
+
+<!-- Soft Skills -->
+<div class="category">
+  <h3>Soft Skills</h3>
+  <div class="grid">
+    <div class="card">Communication</div>
+    <div class="card">Problem Solving</div>
+    <div class="card">Teamwork</div>
+    <div class="card">Leadership</div>
+  </div>
+</div>
+
+<!-- Others -->
+<div class="category">
+  <h3>Others</h3>
+  <div class="grid">
+    <div class="card">Agile</div>
+    <div class="card">Scrum</div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Suvidyendra | Portfolio</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

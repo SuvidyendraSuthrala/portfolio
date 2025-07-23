@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      background: linear-gradient(120deg, #43cea2, #185a9d);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      padding: 40px;
+    }
+
+    .hero h2 {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: transparent; /* Fully transparent */
+  z-index: 1000;
+}
+
+
+    .hero p {
+      font-size: 24px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Floating shapes animation for background */
+    .floating-shapes span {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-30px); opacity: 0.5; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 42px;
+      }
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h1>Suthrala Suvidyendra | Portfolio </h1>
+  <ul>
+    <li><a href="index.html">Meet me</a></li>
+    <li><a href="about.html" style="color:#ff6f91;">ABOUT</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certifications.html">Certifications</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Hero About Section -->
+<div class="hero">
+  <div class="floating-shapes">
+    <span style="width:50px; height:50px; top:25%; left:15%; animation-delay:0s;"></span>
+    <span style="width:70px; height:70px; top:60%; left:80%; animation-delay:2s;"></span>
+    <span style="width:40px; height:40px; top:80%; left:50%; animation-delay:4s;"></span>
+  </div>
+<Br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<Br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<Br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <h2>About Me</h2>
+  <p>
+    I'm <strong>Suthrala Suvidyendra</strong>, an enthusiastic and passionate techie currently pursuing B.Tech in Artificial Intelligence and Data Science.
+    <br><br>
+    I have a deep interest in <strong>AI, Machine Learning, Data Science, and Web Development</strong>. My goal is to develop solutions that create real-world impact, leveraging advanced technologies like AI and cloud computing.
+    <br><br>
+    Beyond academics, I'm an active learner, problem solver, and a tech enthusiast who loves exploring new innovations. I enjoy <strong>competitive coding, building cool projects, and participating in hackathons</strong>.
+    <br><br>
+    <strong>Hobbies & Interests:</strong> Gaming 🎮, Traveling ✈️, Reading Tech Blogs 📚, Designing UI, and Listening to Lo-Fi Music 🎵.
+    <br><br>
+    <strong>Hidden Talents:</strong> Public Speaking, Creative Content Writing, and Quick Problem Solving.
+    <br><br>
+    My ultimate aim is to become a <strong>Software Engineer specializing in AI/ML solutions</strong>, while continuously improving and learning.
+  </p>
+</div>
+
+<footer>
+  <p>© 2025 Suvidyendra | Portfolio</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
